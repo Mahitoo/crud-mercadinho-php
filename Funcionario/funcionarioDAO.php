@@ -1,6 +1,5 @@
-
 <?php
-    include 'conexao.php';
+    include '../conexao.php';
 
     class funcionarioDao{
         public function cadastrarFuncionario(Funcionario $f){
@@ -18,7 +17,7 @@
             if($final){
                 echo "<script LANGUAGE='JavaScript'>
                 window.alert('Cadastrado com sucesso');
-                window.location.href='index.php';
+                window.location.href='../index.php';
                 </script>";
             }
         }
@@ -38,7 +37,7 @@
             if($final){
                 echo "<script LANGUAGE='JavaScript'>
                 window.alert('Atualizado com sucesso');
-                window.location.href='index.php';
+                window.location.href='../index.php';
                 </script>";
             }
         }
@@ -56,7 +55,7 @@
             if($final){
                 echo "<script LANGUAGE='JavaScript'>
                 window.alert('Deletado com sucesso');
-                window.location.href='index.php';
+                window.location.href='../index.php';
                 </script>";
             }
         }
