@@ -37,13 +37,11 @@
         box-shadow: 0 0 1em black;
     }
 
-    #modalCadastro {
-        margin-left: 20%;
+    #btnAtt{
+        width:100px;
     }
 
-    #modalAtualizar {
-        margin-left: 70%;
-    }
+
     </style>
 
 </head>
@@ -56,7 +54,11 @@
     </div>
 
     <br /><br /><br />
-    <div id="modalCadastro">
+
+
+    <div class="row">
+        <div class="col-3"></div>
+            <div class="col-2"><div id="modalCadastro">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Cadastrar Estoque
@@ -94,15 +96,44 @@
                             Fechar
                         </button>
                         <p><input type="submit" class="btn btn-secondary" name='botao_estoque'
-                                value='cadastrar_estoque'></p>
+                                value='Cadastrar'></p>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div></div>
+            <div class="col-2">
+                <!-- Button trigger modal -->
+<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModalDeletar">
+  Deletar Produto
+</button>
 
-    <div id="modalAtualizar">
+<!-- Modal -->
+<div class="modal fade" id="exampleModalDeletar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Deletar Produto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <form action='controleEstoque.php' method='GET'>
+        <p>
+            <input class="inputModalCadastro" type="number" min="0" name='codigo_estoque' placeholder="Código"/>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <p><input type="submit" class="btn btn-secondary" name='botao_estoque' value='Deletar'></input></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+            <div class="col-2">
+            <div id="modalAtualizar">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModalEstoque">
             Atualizar Estoque
@@ -120,6 +151,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
+                        <form action='controleEstoque.php' method='GET'>
                         <p>
                             <input class="inputModalCadastro" type="number" min="0" name="codigo_estoque"
                                 placeholder="Código" />
@@ -141,33 +173,23 @@
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                             Fechar
                         </button>
-                        <p><input type="submit" class="btn btn-secondary" name='botao_estoque'
-                                value='atualizar_estoque'></p>
+                        <p><input type="submit" class="btn btn-secondary" id="btnAtt" name='botao_estoque'
+                                value='Atualizar'></p>
+                                </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- apagar -->
-    <form action='controleEstoque.php' method='GET'>
-        <p>
-            <input class="inputModalCadastro" type="number" min="0" name="codigo_estoque" placeholder="Código" />
-        </p>
-        <p>
-            <input class="inputModalCadastro" type="text" name="produto" placeholder="Nome do Produto" />
-        </p>
-        <p>
-            <input class="inputModalCadastro" type="number" min="1" name="quantidade" placeholder="Quantidade" />
-        </p>
-        <p>
-            <input class="inputModalCadastro" type="number" step="any" min="1" name="valor"
-                placeholder="Valor do Produto" />
-        </p>
+            </div>
         </div>
-        <p><input type="submit" class="btn btn-secondary" name='botao_estoque' value='atualizar_estoque'></p>
-    </form>
-    <!-- apagar -->
+
+
+    
+
+    
+   
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

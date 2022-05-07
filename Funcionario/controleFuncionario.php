@@ -14,7 +14,7 @@
   include 'funcionarioDAO.php';
   $funcDao = new funcionarioDao();
 
-  if($botao=='cadastrar'){
+  if($botao=='Cadastrar'){
     $funcDao->cadastrarFuncionario($func);
   }else if($botao=='consultar'){
       $funcDao->consultarFuncionario();
@@ -25,7 +25,7 @@
       }
     }else if ($botao=='Atualizar'){
       $funcDao->atualizarFuncionario($func);
-    }else if ($botao=='deletar'){
+    }else if ($botao=='Deletar'){
       $funcDao->deletarFuncionario($codigo);
     }
   
