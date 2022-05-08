@@ -46,14 +46,11 @@
 
         public function deletarEstoque($codigo_estoque){
             $sql = 'delete from estoque where codigo_estoque=?';
-
             $banco = new conexao();
             $con = $banco->getConexao();
             $resultadoEstoque = $con->prepare($sql);
-            $resultadoEstoque->bindValue(1, $codigo_estoque);
-
+            $resultadoEstoque->bindValue(1, $codigo_estoque); 
             $final = $resultadoEstoque->execute();
-
             if($final){
                 echo "<script LANGUAGE='JavaScript'>
                 window.alert('Deletado com sucesso');
@@ -65,7 +62,6 @@
 
         public function consultarEstoque(){
             $sql = 'select * from Estoque';
-
             $banco = new conexao();
             $con = $banco->getConexao();
             $resultadoEstoque = $con->prepare($sql);

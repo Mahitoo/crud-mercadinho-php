@@ -20,7 +20,7 @@
         font-size: 50px;
         font-family: 'Source Code Pro', monospace;
         text-align: center;
-        margin-top: 5px;
+        margin: 5px 0 140px;
     }
 
     input:focus {
@@ -38,13 +38,6 @@
         padding: 0;
         font-size: 50px;
         font-family: 'Source Code Pro', monospace;
-    }
-
-
-    #centralizarBotoes {
-
-        margin-left: 18%;
-
     }
 
     .botaoDosCruds {
@@ -68,8 +61,7 @@
 
     <h1>Crud em php Mercado</h1>
 
-    <br /><br /><br /><br /><br /> <br>
-    <div id="centralizarBotoes" class="container">
+    <div class="container">
         <div class="row">
             <div class="col">
                 <a href="Funcionario/FuncionarioPage.php">
@@ -94,7 +86,6 @@
             </div>
         </div>
     </div>
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

@@ -29,7 +29,7 @@
     }else if ($botao_estoque=='Atualizar'){
       $estoqDao->atualizarEstoque($estoq);
     }else if ($botao_estoque=='Deletar'){
-      $estoqDao->deletarEstoque($estoq);
+      $estoqDao->deletarEstoque($codigo_estoque);
     }
   
 
