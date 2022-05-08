@@ -1,0 +1,25 @@
+create database mercado;
+use mercado;
+
+create table estoque(
+    codigo_estoque int,
+    produto varchar(90) not null,
+    quantidade int,
+    valor_compra decimal(9,2),
+    primary key(codigo_estoque)
+    );
+    
+create table funcionario(
+     codigo_funcionario int primary key,
+     nome varchar(90) not null,
+     cargo varchar(90)
+     );
+    
+create table vendas(
+     codigo_venda int primary key,
+     produto_venda int,
+     quantidade_venda int,
+     funcionario_venda int,
+     foreign key(produto_venda) references estoque(codigo_estoque),
+     foreign key(funcionario_venda) references funcionario(codigo_funcionario)
+);    
