@@ -16,8 +16,8 @@
 
             if($final){
                 echo "<script LANGUAGE='JavaScript'>
-                window.alert('Cadastrado com sucesso');
-                window.location.href='../index.php';
+                window.alert('Funcionario cadastrado com sucesso');
+                window.location.href='FuncionarioPage.php';
                 </script>";
             }
         }
@@ -36,8 +36,8 @@
 
             if($final){
                 echo "<script LANGUAGE='JavaScript'>
-                window.alert('Atualizado com sucesso');
-                window.location.href='../index.php';
+                window.alert('Funcionario atualizado com sucesso');
+                window.location.href='FuncionarioPage.php';
                 </script>";
             }
         }
@@ -54,27 +54,10 @@
 
             if($final){
                 echo "<script LANGUAGE='JavaScript'>
-                window.alert('Deletado com sucesso');
-                window.location.href='../index.php';
+                window.alert('Funcionario deletado com sucesso');
+                window.location.href='FuncionarioPage.php';
                 </script>";
             }
         }
-        
-
-        public function consultarFuncionario(){
-            $sql = 'select * from funcionario';
-
-            $banco = new conexao();
-            $con = $banco->getConexao();
-            $resultado = $con->prepare($sql);
-            $resultado->execute();
-            if($resultado->rowCount()>0){
-                $valor = $resultado->fetchAll(\PDO::FETCH_ASSOC);
-                return $valor;
-            }
-
-            
-        }
-
     }
 ?>

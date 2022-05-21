@@ -207,7 +207,7 @@ $resultados_funcionario = mysqli_query($conexaoTeste, $sql);
                         echo "<td>".$userdata['nome']."</td>";
                         echo "<td>".$userdata['cargo']."</td>";
                          echo "<td>Ações</td>";
-                        echo "</td>";
+                        echo "</tr>";
                     }
                     ?>
                         </tbody>

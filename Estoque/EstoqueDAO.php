@@ -17,8 +17,8 @@
 
             if($final){
                 echo "<script LANGUAGE='JavaScript'>
-                window.alert('Cadastrado com sucesso');
-                window.location.href='../index.php';
+                window.alert('Estoque cadastrado com sucesso');
+                window.location.href='EstoquePage.php';
                 </script>";
             }
         }
@@ -38,8 +38,8 @@
 
             if($final){
                 echo "<script LANGUAGE='JavaScript'>
-                window.alert('Atualizado com sucesso');
-                window.location.href='../index.php';
+                window.alert('Estoque atualizado com sucesso');
+                window.location.href='EstoquePage.php';
                 </script>";
             }
         }
@@ -53,26 +53,10 @@
             $final = $resultadoEstoque->execute();
             if($final){
                 echo "<script LANGUAGE='JavaScript'>
-                window.alert('Deletado com sucesso');
-                window.location.href='../index.php';
+                window.alert('Estoque deletado com sucesso');
+                window.location.href='EstoquePage.php';
                 </script>";
             }
         }
-        
-
-        public function consultarEstoque(){
-            $sql = 'select * from Estoque';
-            $banco = new conexao();
-            $con = $banco->getConexao();
-            $resultadoEstoque = $con->prepare($sql);
-            $resultadoEstoque->execute();
-            if($resultadoEstoque->rowCount()>0){
-                $valor = $resultadoEstoque->fetchAll(\PDO::FETCH_ASSOC);
-                return $valor;
-            }
-
-            
-        }
-
     }
 ?>

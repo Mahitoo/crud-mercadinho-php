@@ -18,15 +18,7 @@
 
   if($botao_estoque=='Cadastrar'){
     $estoqDao->cadastrarEstoque($estoq);
-  }else if($botao_estoque=='consultar_estoque'){
-      $estoqDao->consultarEstoque();
-      foreach($estoqDao->consultarEstoque() as $resEstoq){
-        echo $resEstoq['codigo_estoque']."<br>";
-        echo $resEstoq['produto']."<br>";
-        echo $resEstoq['quantidade']."<br>";
-        echo $resEstoq['valor_compra']."<br><br>";
-      }
-    }else if ($botao_estoque=='Atualizar'){
+  }else if ($botao_estoque=='Atualizar'){
       $estoqDao->atualizarEstoque($estoq);
     }else if ($botao_estoque=='Deletar'){
       $estoqDao->deletarEstoque($codigo_estoque);

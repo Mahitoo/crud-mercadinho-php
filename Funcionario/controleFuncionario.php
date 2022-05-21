@@ -16,14 +16,7 @@
 
   if($botao=='Cadastrar'){
     $funcDao->cadastrarFuncionario($func);
-  }else if($botao=='consultar'){
-      $funcDao->consultarFuncionario();
-      foreach($funcDao->consultarFuncionario() as $res){
-        echo $res['codigo_funcionario']."<br>";
-        echo $res['nome']."<br>";
-        echo $res['cargo']."<br><br>";
-      }
-    }else if ($botao=='Atualizar'){
+  }else if ($botao=='Atualizar'){
       $funcDao->atualizarFuncionario($func);
     }else if ($botao=='Deletar'){
       $funcDao->deletarFuncionario($codigo);

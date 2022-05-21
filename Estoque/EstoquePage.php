@@ -217,7 +217,7 @@ $resultados_estoque = mysqli_query($conexaoTeste, $sql);
                         echo "<td>".$userdata['quantidade']."</td>";
                         echo "<td>".$userdata['valor_compra']."</td>";
                         echo "<td>Ações</td>";
-                        echo "</td>";
+                        echo "</tr>";
                     }
                     ?>
                         </tbody>
