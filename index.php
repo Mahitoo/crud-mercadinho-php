@@ -43,7 +43,7 @@
     .botaoDosCruds {
         border: solid black 2px;
         border-radius: 10px;
-        width: 330px;
+        width: 345px;
         height: 165px;
     }
 
@@ -66,7 +66,7 @@
             <div class="col">
                 <a href="Funcionario/FuncionarioPage.php">
                     <button type="button" class="botaoDosCruds">
-                        <p>Fucionario</p>
+                        <p>Funcionário</p>
                     </button>
                 </a>
             </div>

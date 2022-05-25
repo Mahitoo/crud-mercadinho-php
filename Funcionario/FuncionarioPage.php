@@ -45,6 +45,7 @@ $resultados_funcionario = mysqli_query($conexaoTeste, $sql);
     .inputModalCadastro:focus {
         box-shadow: 0 0 1em black;
     }
+
     </style>
 
 </head>
@@ -107,7 +108,7 @@ $resultados_funcionario = mysqli_query($conexaoTeste, $sql);
                 <div id="modalDeletar">
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                        data-bs-target="#exampleModalDeletar" style="font-size: 1.2em;">Deletar Funcionario</button>
+                        data-bs-target="#exampleModalDeletar" style="font-size: 1.2em; width: 195px;">Deletar <br> Funcionario</button>
 
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModalDeletar" tabindex="-1" aria-labelledby="exampleModalLabel"
