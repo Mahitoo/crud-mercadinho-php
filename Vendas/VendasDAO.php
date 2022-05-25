@@ -24,7 +24,7 @@
         }
 
         public function atualizarVendas(Vendas $v){
-            $sql = 'update vendas set funcionario_venda=?, quantidade_venda=?, produto_vendas=? where codigo_venda=?';
+            $sql = 'update vendas set funcionario_venda=?, quantidade_venda=?, produto_venda=? where codigo_venda=?';
 
             $banco = new conexao();
             $con = $banco->getConexao();

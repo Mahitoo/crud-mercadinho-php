@@ -181,8 +181,8 @@ $resultados_estoque = mysqli_query($conexaoTeste, $sql);
                                                 placeholder="Código" />
                                         </p>
                                         <p>
-                                            <input class="inputModalCadastro" type="text" name="produto_vendas"
-                                                placeholder="Nome do Produto" />
+                                            <input class="inputModalCadastro" type="number" min="0" name="produto_vendas"
+                                                placeholder="Codigo do Produto" />
                                         </p>
                                         <p>
                                             <input class="inputModalCadastro" type="number" min="1"
@@ -190,7 +190,7 @@ $resultados_estoque = mysqli_query($conexaoTeste, $sql);
                                         </p>
                                         <p>
                                             <input class="inputModalCadastro" type="number" min="0" step="any"
-                                                name="funcionario_vendas" placeholder="funcionario" />
+                                                name="funcionario_vendas" placeholder="Codigo do funcionario" />
                                         </p>
                                 </div>
                                 <div class="modal-footer">
