@@ -73,7 +73,7 @@ $resultados_estoque = mysqli_query($conexaoTeste, $sql);
                 <div id="modalCadastro">
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal" style="font-size: 1.0em;">Cadastrar Venda
+                        data-bs-target="#exampleModal" style="font-size: 1.2em; width: 195px;" >Cadastrar <br> Venda
                     </button>
 
                     <!-- Modal -->
@@ -82,7 +82,7 @@ $resultados_estoque = mysqli_query($conexaoTeste, $sql);
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="TituloModalCentralizado">Venda</h5>
+                                    <h5 class="modal-title" id="TituloModalCentralizado" >Venda</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
@@ -122,7 +122,7 @@ $resultados_estoque = mysqli_query($conexaoTeste, $sql);
                 <div id="modalDeletar">
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                        data-bs-target="#exampleModalDeletarEstoque" style="font-size: 1.0em;">Deletar Venda
+                        data-bs-target="#exampleModalDeletarEstoque" style="font-size: 1.2em; width: 195px;">Deletar <br> Venda
                     </button>
 
                     <!-- Modal -->
@@ -159,7 +159,7 @@ $resultados_estoque = mysqli_query($conexaoTeste, $sql);
                 <div id="modalAtualizar">
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                        data-bs-target="#exampleModalEstoque" style="font-size: 1.0em;">Atualizar Venda
+                        data-bs-target="#exampleModalEstoque" style="font-size: 1.2em; width: 195px;">Atualizar <br> Venda
                     </button>
 
                     <!-- Modal -->
